@@ -3,5 +3,5 @@ SQL is a powerful tool for reporting and data analysis. It is commonly used to e
 
 Reference projects:
 
-•	highLead: developing custom reports for a client using SQL scripts
-•	employees: utilizing SQL queries to uncover insights and trends in a data analysis project
+- highLead: developing custom reports for a client using SQL scripts
+- employees: utilizing SQL queries to uncover insights and trends in a data analysis project
