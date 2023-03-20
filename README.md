@@ -5,3 +5,5 @@ Reference projects:
 
 - highLead: developing custom reports for a client using SQL scripts
 - employees: utilizing SQL queries to uncover insights and trends in a data analysis project
+- galaxql: SQL tutorial disguised as a galaxy manipulation application
+
