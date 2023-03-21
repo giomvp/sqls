@@ -5,6 +5,6 @@ Web: http://sol.gfxile.net/g3/
 
 Attached files:
 
-- problemStatement: 20 exercicies to address
+- exercises: 20 exercises to solve
 - queries: sql solutions
 
