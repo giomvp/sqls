@@ -1,6 +1,6 @@
 # High Lead
 
-Generate sales reports and commission analysis from a database by querying transaction data across quotes, orders, invoices and credit memos. The reports require aggregating data at both document and item line level while tracking flow from quote to order to invoice. Implemented 4 reports:
+Generate **sales reports and commission analysis** from a database by **querying transaction data** across quotes, orders, invoices and credit notes. The reports require **aggregating data at both document and item line level** while tracking flow from quote to order to invoice. Implemented 4 reports:
 
 1. List all sales documents with customer info and amounts.
 2. Document flow for a given customer from quote to invoice to credit.
