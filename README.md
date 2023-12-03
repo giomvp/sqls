@@ -4,7 +4,8 @@ SQL is a powerful tool for data administration and reporting. Through the comple
 
 - **highLead:** Developing custom reports for a client using SQL scripts.
 
-- **employees:** Dtilizing SQL queries to uncover insights and trends in a data analysis project.
+- **employees:** Using SQL queries to uncover insights and trends in a data analysis project.
 
 - **galaxql:** SQL tutorial disguised as a galaxy manipulation application.
 
+- **eaeTrabajoFinal:** Relational marketing database design with SQL: tables, relationships, and queries with normalization, data insertion and cascading update.
