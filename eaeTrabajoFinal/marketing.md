@@ -25,7 +25,7 @@ Crea las dos tablas en SQL con un mínimo de 3 columnas por tabla con las PRIMAR
 
 **Respuesta:**
 
-*Create table Campaigns setting column Campaign_ID as PRIMARY KEY*
+Create table Campaigns setting column `Campaign_ID` as `PRIMARY KEY`
 
 ```sql
 CREATE TABLE Campaigns (
@@ -44,7 +44,7 @@ Notes NVARCHAR(MAX)
 );
 ```
 
-*Create table Interactions setting column "Campaign_ID" as a foreign key with the constraint 'on update cascade'.*
+Create table Interactions setting column `Campaign_ID` as a `foreign key` with the constraint `ON UPDATE CASCADE`.
 
 ```sql
 CREATE TABLE Interactions (
@@ -63,7 +63,7 @@ FOREIGN KEY (Campaign_ID) REFERENCES Campaigns(Campaign_ID) ON UPDATE CASCADE
 );
 ```
 
-*Insert records into table Campaigns*
+Insert records into table Campaigns
 
 ```sql
 INSERT INTO Campaigns (Campaign_ID, Campaign_Name, Campaign_Type, Start_Date, End_Date, Budget, Objective, Channels_Used, Target_Audience, Status, Results, Notes)
@@ -80,7 +80,7 @@ VALUES
     (10, 'Fall Clearance', 'Clearance Sale', '2024-10-01', '2024-10-15', 2800.00, 'Clear out old inventory', 'Website, Ads', 'All customers', 'Planned', 'Inventory reduction strategy', 'Clearance sale for excess inventory.');
 ```
 
-*Insert records into table Interactions*
+Insert records into table Interactions
 
 ```sql
 INSERT INTO Interactions (Interaction_ID, Customer_ID, Campaign_ID, Interaction_Type, Interaction_Timestamp, Channel, Response_Action, Outcome, Engagement_Duration, Device_Used, Location)
@@ -89,7 +89,7 @@ VALUES
     (2, 102, 2, 'Open', '2023-09-16 15:20:00', 'Website', 'Opened promotional email', 'Visited product page', 120, 'Mobile', 'Los Angeles, USA'),
     (3, 103, 3, 'Purchase', '2023-11-05 18:45:00', 'Social Media', 'Made a purchase', 'Completed transaction', 0, 'Mobile', 'London, UK'),
     (4, 104, 1, 'Click', '2023-07-25 11:10:00', 'Email', 'Clicked on discount offer', 'Explored product options', 90, 'Desktop', 'Chicago, USA'),
-	(5, 201, 6, 'Click', '2023-12-10 08:45:00', 'Email', 'Clicked on offer link', 'Engaged', 40, 'Desktop', 'San Francisco, USA'),
+    (5, 201, 6, 'Click', '2023-12-10 08:45:00', 'Email', 'Clicked on offer link', 'Engaged', 40, 'Desktop', 'San Francisco, USA'),
     (6, 202, 7, 'Open', '2023-12-28 17:20:00', 'Website', 'Opened promotion email', 'Engaged', NULL, 'Mobile', 'Chicago, USA'),
     (7, 203, 8, 'Purchase', '2024-03-18 11:30:00', 'Social Media', 'Bought product XYZ', 'Successful purchase', NULL, 'Mobile', 'London, UK'),
     (8, 204, 9, 'Click', '2024-07-02 10:00:00', 'Website', 'Clicked on flash sale link', 'Engaged', 25, 'Desktop', 'Paris, France'),
@@ -103,11 +103,15 @@ Escribe el código que actualice un par de registros de la tabla maestra que apa
 
 **Respuesta**
 
+Actualizacion 1
+
 ```sql
 UPDATE Campaigns
 SET Campaigns.Campaign_ID = 11
 WHERE Campaigns.Campaign_ID = 2;
 ```
+Actualizacion 2
+
 ```sql
 UPDATE Campaigns
 SET Campaigns.Campaign_ID = 15
@@ -120,7 +124,7 @@ Escribe una query que una las 2 tablas con una INNER JOIN y luego escribe otra q
 
 **Respuesta**
 
-*-- INNER JOIN*
+Inner Join
 
 Seleccionar solo registros que tienen relación en ambas tablas. En este caso, las campanas que han tenido interacción.
 
@@ -130,7 +134,7 @@ FROM Campaigns JOIN Interactions
 ON Campaigns.Campaign_ID = Interactions.Campaign_ID;
 ```
 
-*--LEFT JOIN*
+Left Join
 
 Seleccionar todos los registros de la tabla Campaigns y la información de la tabla Interactions solo para aquellos registros con una referencia validad a la tabla Campaigns.
 
