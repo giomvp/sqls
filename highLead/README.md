@@ -1,17 +1,26 @@
-# High Lead
+# High Lead - Sales and Commission Analysis
 
-Generate **sales reports and commission analysis** from a database by **querying transaction data** across quotes, orders, invoices and credit notes. The reports require **aggregating data at both document and item line level** while tracking flow from quote to order to invoice. Implemented 4 reports:
+## Description
+This project aims to generate sales reports and analyze sales representatives' commissions based on transactional data stored in a database. The reports require aggregating data at both the document and item line level, while tracking the flow from quote to order, invoice, and credit note (if applicable).
 
-1. List all sales documents with customer info and amounts.
-2. Document flow for a given customer from quote to invoice to credit.
-3. Item-level flow from quote to order to invoice for a given quote.
-4. Monthly sales commissions for reps based on tiered commission rates.
+## Required Reports
+1. **Sales Documents List**: A report listing all sales, quotes, sales orders, invoices, and credit notes, displaying relevant information such as document type, date, document number, customer details, and total amounts.
 
-**Core skills:** SQL, Data Analysis, Reporting, Data Modeling, Analytics.
+2. **Document Flow by Customer**: A report that, given a customer code, shows the sales flow for that customer, starting from the quote and following through to the invoice and credit note (if applicable).
 
-Attached files:
+3. **Item Flow by Quote**: A report that, given a quote number, shows the sales flow of all items, detailing the quantities and amounts at each stage (quote, sales order, invoice, and credit note).
 
--  **dataBase:** Database creation file.
--  **dbSchema:** Graphic representation of tables, files, keys.
--  **Enunciado de Problemas:** Reports description.
--  **queries:** Queries to create required reports.
+4. **Monthly Sales Representatives' Commissions**: A report showing the monthly commissions for sales representatives based on net sales, grouped by representative and ordered by month. Commissions are calculated according to variable rates based on quantity sold tiers.
+
+## Core Skills
+- SQL
+- Data Analysis
+- Report Generation
+- Data Modeling
+- Data Analytics
+
+## Attached Files
+- **dataBase**: Database creation file.
+- **dbSchema**: Graphical representation of tables, files, and keys.
+- **Enunciado de Problemas**: Description of the required reports.
+- **queries**: SQL queries to generate the requested reports.

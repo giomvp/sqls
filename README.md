@@ -20,5 +20,3 @@ SQL (Structured Query Language) is a powerful tool for data administration and r
 - Designed a relational marketing database adhering to normalization principles.
 - Created tables, defined relationships, and implemented queries with cascading updates.
 - Ensured data integrity and optimized database performance through proper database design.
-
-These projects showcase my proficiency in SQL, database design, and data manipulation. I have experience working with various RDBMS environments and can effectively leverage SQL to extract insights, generate reports, and optimize database performance.
