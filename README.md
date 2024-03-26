@@ -1,11 +1,24 @@
-# sqls
+# SQL Projects
 
-SQL is a powerful tool for data administration and reporting. Through the completion of these projects I show experience in the manipulation of data within Relational Database Management Systems (RDBMS) environments and a understanding of the importance of efficient database design to ensure optimal performance.
+SQL (Structured Query Language) is a powerful tool for data administration and reporting within Relational Database Management Systems (RDBMS). Through the completion of these projects, I demonstrate my experience in data manipulation and database design, ensuring optimal performance and efficiency.
 
-- **highLead:** Developing custom reports for a client using SQL scripts.
+## Project Highlights
 
-- **employees:** Using SQL queries to uncover insights and trends in a data analysis project.
+### 1. highLead - [link](/highLead/)
+- Developed custom SQL scripts to generate reports tailored to a client's specific requirements.
+- Utilized advanced querying techniques to extract valuable insights from complex data sets.
 
-- **galaxql:** SQL tutorial disguised as a galaxy manipulation application.
+### 2. employees - [link](/employees/)
+- Employed SQL queries to uncover trends and patterns in a data analysis project.
+- Performed exploratory data analysis and generated actionable insights using SQL's analytical capabilities.
 
-- **eaeTrabajoFinal:** Relational marketing database design with SQL: tables, relationships, and queries with normalization, data insertion and cascading update.
+### 3. galaxql - [link](/galaxql/)
+- Completed an interactive SQL tutorial disguised as a galaxy manipulation application.
+- Gained hands-on experience with SQL querying, data manipulation, and database management.
+
+### 4. eaeTrabajoFinal - [link](/eaeTrabajoFinal/)
+- Designed a relational marketing database adhering to normalization principles.
+- Created tables, defined relationships, and implemented queries with cascading updates.
+- Ensured data integrity and optimized database performance through proper database design.
+
+These projects showcase my proficiency in SQL, database design, and data manipulation. I have experience working with various RDBMS environments and can effectively leverage SQL to extract insights, generate reports, and optimize database performance.
