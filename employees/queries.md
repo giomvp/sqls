@@ -1,14 +1,10 @@
-1. Headcount by departement: 
+### Report 1
 
-Provides the number of employees in each department, highlighting the most and least staffed departments.
+Headcount by departement: Provides the number of employees in each department, highlighting the most and least staffed departments.
 
-**Answer:**
+**Result:**
 
-This query will return a list of department names and their corresponding headcounts, 
-ordered by headcount in descending order. The query first joins the departments and 
-dept_emp tables on the dept_no column, and then groups the results by department name. 
-
-**sql:**
+This query will return a list of department names and their corresponding headcounts, ordered by headcount in descending order. The query first joins the departments and dept_emp tables on the dept_no column, and then groups the results by department name. 
 
 ```sql
 SELECT
@@ -28,18 +24,16 @@ ORDER BY
     headcount DESC;
 ```
 
-2. Average salary by department: 
+### Report 2 
 
-Displays the average salary of employees in each department, identifying the highest and lowest paid departments.
+Average salary by department: Displays the average salary of employees in each department, identifying the highest and lowest paid departments.
 
-**Answer:**
+**Result:**
 
 This query will return a list of department names and their corresponding average salaries, 
 ordered by average salary in descending order. The query first joins the departments, dept_emp 
 and salaries tables on the dept_no and emp_no columns, respectively. Then, the results are grouped 
 by department name and the AVG() function is used to calculate the average salary for each group.
-
-**sql**
 
 ```sql
 SELECT
@@ -62,18 +56,13 @@ ORDER BY
     avg_salary DESC;
 ```
 
-3. Employee turnover rate: 
+### Report 3 
 
-Reveals the rate at which employees are leaving the company, enabling the identification of potential problem areas.
+Employee turnover rate: Reveals the rate at which employees are leaving the company, enabling the identification of potential problem areas.
 
-**Answer:**
+**Result:**
 
-This query will return the total number of employees, the number of employees who have 
-left the company and the turnover rate (expressed as a percentage). The query uses a left 
-join to join the dept_emp table with a subquery that selects only the employees who are 
-still working for the company (based on the to_date column being greater than or equal to the current date).
-
-**sql**
+This query will return the total number of employees, the number of employees who have left the company and the turnover rate (expressed as a percentage). The query uses a left join to join the dept_emp table with a subquery that selects only the employees who are still working for the company (based on the to_date column being greater than or equal to the current date).
 
 ```sql
 SELECT
@@ -94,17 +83,14 @@ LEFT JOIN
         ON dept_emp.emp_no = current_employees.emp_no
 ```
 
-4. Promotion Rate: 
+### Report 4
 
-Shows the rate at which employees are being promoted within the company, indicating areas where employees may lack advancement opportunities.
+Promotion Rate: Shows the rate at which employees are being promoted within the company, indicating areas where employees may lack advancement opportunities.
 
-**Answer:**
+**Result**
 
 This query will return the total number of promotions and the promotion rate (expressed as a percentage)
-within the company. The query uses a left join to join the employees table with a subquery that selects 
-only the employees who have been promoted to the title of "Manager". 
-
-**sql**
+within the company. The query uses a left join to join the employees table with a subquery that selects only the employees who have been promoted to the title of "Manager". 
 
 ```sql
 SELECT
@@ -126,18 +112,16 @@ LEFT JOIN
         ON employees.emp_no = promotions.emp_no   
 ```
 
-5. average tenure of employees:
+### Report 5
 
-Presents the average length of time employees have been with the company.
+Average tenure of employees: Presents the average length of time employees have been with the company.
 
-**Answer:**
+**Result:**
 
 This query will return the average tenure of employees in years. The query uses the DATEDIFF() 
 function to calculate the difference between the current date and the hire_date of each employee, 
 and then divide it by 365 to convert it to years. The AVG() function is then used to calculate the 
 average of these differences.
-
-**sql**
 
 ```sql
 SELECT
@@ -167,18 +151,16 @@ GROUP BY
     departments.dept_name
 ```
 
-6. Salary Distribution:
+### Report 6  
 
-Illustrates how salaries are distributed among employees, helping to identify potential overpayment or underpayment of certain groups.
+Salary Distribution: Illustrates how salaries are distributed among employees, helping to identify potential overpayment or underpayment of certain groups.
 
-**Answer:**
+**Result:**
 
 This query will return the average salary of employees, grouped by year of tenure bins 
 of 5,10,15, etc. The query joins the employees and the salaries table on the emp_no column, 
 then it calculates the tenure of each employee using DATEDIFF() function. The tenure is divided by 
 365 to convert it to years.
-
-**sql**
 
 ```sql
 SELECT
